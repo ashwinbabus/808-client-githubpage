@@ -26,13 +26,13 @@ function App({ signInUser }) {
   }, [signInUser]);
   return (
     <div className="App">
-      <ProtectedRoute exact path="/dashboard" component={Dash} />
+      <ProtectedRoute exact path={process.env.PUBLIC_URL + "/dashboard"} component={Dash} />
       <Switch>
-        <Route path="/shop" component={Shop} />
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/my-account" component={MyAccount} />
-        <Route exact path="/cart" component={CartPage} />
-        <Route exact path="/order-success" component={ThankYou} />
+        <Route path={process.env.PUBLIC_URL + "/shop"} component={Shop} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Homepage} />
+        <Route exact path={process.env.PUBLIC_URL + "/my-account"} component={MyAccount} />
+        <Route exact path={process.env.PUBLIC_URL + "/cart"} component={CartPage} />
+        <Route exact path={process.env.PUBLIC_URL + "/order-success"} component={ThankYou} />
       </Switch>
       <Cart />
     </div>
