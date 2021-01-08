@@ -1,0 +1,72 @@
+.your-addresses-tab {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add-address-outer-box {
+  height: 21.9rem;
+  width: 27rem;
+  border: 2px dashed #c7c7c7;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-address-inner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    color: #565959;
+  }
+
+  .add-icon {
+    height: 50px;
+    width: 50px;
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+  }
+}
+
+.address-tile {
+  height: 21.9rem;
+  width: 27rem;
+  border: 2px solid #c7c7c7;
+  position: relative;
+
+  .address-tile-contents {
+    margin: 16px 20px;
+    font-size: 12px;
+    p {
+      margin: 0;
+    }
+    .address-options {
+      display: flex;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    #fullname {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.address-tile-with-button {
+  .custom-button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 0%;
+    display: flex;
+    align-items: center;
+    // background-color: grey;
+  }
+}

@@ -1,0 +1,54 @@
+.useraccount {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__navigation {
+    margin: 0 25px 0 0;
+    ul {
+      margin: 50px 0;
+      display: flex;
+      list-style: none;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      li {
+        margin: 0 5px;
+        padding: 10px 0;
+        &:hover {
+          background-color: lightgrey;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__section {
+    height: 50%;
+  }
+}
+
+.dashboard {
+  height: 100%;
+  text-align: center;
+  &__welcome {
+    margin-bottom: 30px;
+    p {
+      display: inline;
+    }
+  }
+  #log-out {
+    &:hover {
+      color: #aaa;
+      cursor: pointer;
+    }
+  }
+}
+
+.login-and-security {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

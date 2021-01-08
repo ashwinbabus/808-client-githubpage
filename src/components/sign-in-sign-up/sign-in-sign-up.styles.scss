@@ -1,0 +1,54 @@
+.sign-in-sign-up-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.login-section {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.alert-user-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-user {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.fade-user {
+  transition: opacity 0.15s linear;
+}
+
+@media (min-width: 768px) {
+  .login-section {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .login-section {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

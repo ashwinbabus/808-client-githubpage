@@ -1,0 +1,72 @@
+.add-options-dialogueBox-bg {
+  min-height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  overflow: none;
+
+  .add-options-dialogueBox-container {
+    border-radius: 2rem;
+    position: absolute;
+    height: auto;
+    width: 25%;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.5);
+
+    .add-options-dialogueBox-form-container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .add-options-dialogueBox-title-bar {
+      display: flex;
+      align-items: center;
+      height: 8rem;
+      justify-content: space-between;
+      padding: 25px;
+      background-color: #3899ec;
+
+      h4 {
+        font: bold;
+        color: white;
+      }
+
+      .close-icon {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 1.8rem;
+        padding: 0;
+        background-color: rgba(22, 45, 61, 0.24);
+        color: white;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-color: transparent;
+        .close-icon-container {
+          line-height: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .button__container {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .custom-button {
+      // border-radius: 999px;
+      width: 10rem;
+      margin: 20px 0;
+    }
+  }
+}

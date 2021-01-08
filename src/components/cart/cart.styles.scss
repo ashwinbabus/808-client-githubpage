@@ -1,0 +1,124 @@
+.cart-preview-transparent-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 1, 1, 0.2);
+  z-index: 25;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.cart-preview-box {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 400px;
+  background-color: #ffffff;
+  color: #8b8b8b;
+  top: 0%;
+  z-index: 50;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 90%;
+  margin: auto;
+  * {
+    padding: 2.5rem;
+  }
+  border-bottom: 1px solid #e7e7e7;
+
+  .cart-header-close {
+    cursor: pointer;
+  }
+}
+
+.cart-item-image {
+  display: table-cell;
+}
+
+.cart-items {
+  display: table;
+  width: 90%;
+  margin: 25px auto 10px auto;
+}
+
+.cart-item-details {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 25px;
+  p {
+    width: 100%;
+  }
+
+  .cart-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .quantity-selector {
+      height: 36px;
+      width: 96px;
+      border: 1px solid #e7e7e7;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .decrease-quantity,
+    .increase-quantity,
+    .remove-item {
+      cursor: pointer;
+    }
+    .remove-item {
+      text-decoration: underline;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.checkout-button {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    width: 80%;
+    background-color: #323232;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+.separator-dot {
+  margin: 0 18px;
+  height: 2px;
+  width: 2px;
+  background-color: white;
+}
+
+.cart-is-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-cart-items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 51;
+}

@@ -1,0 +1,22 @@
+.add-address-form {
+    * {
+      display: block;
+    }
+
+      
+    select {
+      padding: 5px;
+      color: grey;
+    }
+  
+    .custom-button {
+      margin-top: 30px;
+    }
+  }
+
+  .add-address-form-buttons{
+      display: flex;
+      .custom-button{
+          margin-right: 1rem;
+      }
+  }

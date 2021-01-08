@@ -1,0 +1,14 @@
+.shop-page-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10rem 0;
+}
+.shop-page-grid {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 70px;
+}

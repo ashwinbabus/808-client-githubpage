@@ -1,0 +1,149 @@
+.addurl {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+
+  &__container {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.5);
+  }
+
+  &__header {
+    background-color: #3899ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__info {
+    padding: 20px;
+    h5 {
+      margin: 25px 0 5px 0;
+    }
+  }
+
+  .table__header {
+    background-color: #daeffe;
+  }
+
+  .table__flex {
+    display: flex;
+    padding: 5px 50px;
+    gap: 30px;
+    .col1 {
+      width: 100px;
+    }
+    .col2 {
+      flex-grow: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  .table__body {
+    margin: 10px 0 25px 0;
+    .addimage {
+      &__outerbox {
+        height: 45px;
+        width: 45px;
+        background-color: #daeffe;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      &__innerbox {
+        height: 90%;
+        width: 90%;
+        border: 1px dashed #5aa5e5;
+        border-radius: 5px;
+        color: #5aa5e5;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.basic-single {
+  width: 50%;
+}
+
+.user_selected_images__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -80px;
+  .selected__image {
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 1);
+    &:hover {
+      border: 1px solid #c0cd97;
+    }
+  }
+}
+
+.optionsimage__select {
+  border: 4px solid #c0cd97;
+}
+
+.hideImagesContainer {
+  display: none;
+}
+
+.Layer_1 {
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.delete__icon{
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.optionsimage__container {
+  position: relative;
+  &:hover {
+    .delete__icon {
+      position: absolute;
+      display: grid;
+      place-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.addurl__buttons{
+  // background-color: royalblue;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 25px;
+  box-shadow: 0 2px 5px 1px grey;
+  .custom-button{
+    border-radius: 5px;
+  }
+}
